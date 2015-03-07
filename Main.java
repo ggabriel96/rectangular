@@ -7,5 +7,6 @@ class Main {
 
         System.out.println(sq1.width + " x " + sq1.height);
         System.out.println("Area: " + sq1.area());
+        System.out.println("Perimeter: " + sq1.perimeter());
     }
 }
