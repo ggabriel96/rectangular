@@ -6,5 +6,6 @@ class Main {
         sq1.width = sq1.height = 10;
 
         System.out.println(sq1.width + " x " + sq1.height);
+        System.out.println("Area: " + sq1.area());
     }
 }
