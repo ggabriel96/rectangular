@@ -1,12 +1,16 @@
 class Main {
     public static void main(String args[]) {
-        Rectangle sq1;
+        Rectangle square = new Rectangle(10, 10);
 
-        sq1 = new Rectangle(10, 10);
-        //sq1.width = sq1.height = 10;
+        System.out.println("Initial size: " + square.getWidth() + " x " + square.getHeight());
+        System.out.println("Initial area: " + square.area());
+        System.out.println("Initial perimeter: " + square.perimeter());
 
-        System.out.println(sq1.width + " x " + sq1.height);
-        System.out.println("Area: " + sq1.area());
-        System.out.println("Perimeter: " + sq1.perimeter());
+        square.setWidth(25);
+        square.setHeight(25);
+
+        System.out.println("\nNew size: " + square.getWidth() + " x " + square.getHeight());
+        System.out.println("New area: " + square.area());
+        System.out.println("New perimeter: " + square.perimeter());
     }
 }
